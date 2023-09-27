@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
           <body className='bg-custom-black max-w-[1440px]'>
             <HeaderComponent />
-            <main className='ml-[117px]'>
+            <main>
              {children}
             </main>
             <FooterComponent />

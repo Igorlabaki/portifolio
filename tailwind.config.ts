@@ -14,6 +14,7 @@ const config: Config = {
         "custom-white": "#E6E2CE",
         "custom-yellow": "#FFC289",
         "custom-orange": "#D87B25",
+        "custom-gray-ligth": "#525252",
       }
     },
   },
