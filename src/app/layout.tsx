@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-          <body className='bg-custom-black'>
+          <body className='bg-custom-black max-w-[1440px]'>
             <HeaderComponent />
-            <main className='ml-[117px] max-w-[1440px]'>
+            <main className='ml-[117px]'>
              {children}
             </main>
             <FooterComponent />
