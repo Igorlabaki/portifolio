@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen h-full gap-y-[56px] bg-custom-black flex-col items-center justify-between">
+    <main className="flex min-h-screen h-full gap-y-[56px] bg-custom-black flex-col items-center justify-between ml-[117px]">
       <IntroComponent/>
       <ContentComponent />
     </main>
