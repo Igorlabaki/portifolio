@@ -16,7 +16,11 @@ const config: Config = {
         "custom-orange": "#D87B25",
         "custom-gray-ligth": "#525252",
         "custom-gray-medium": "#202020",
-      }
+      },
+      fontFamily: {
+        helvetica: [''],
+        mono: ['var(--font-roboto-mono)'],
+      },
     },
   },
   plugins: [],

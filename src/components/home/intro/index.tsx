@@ -1,6 +1,5 @@
-import Image from "next/image";
-import { AnimetedTitleComponent } from "../../animetedTitle";
 import { ImageComponent } from "../../util/image";
+import { AnimetedTitleComponent } from "../../animetedTitle";
 
 
 export default function IntroComponent() {
