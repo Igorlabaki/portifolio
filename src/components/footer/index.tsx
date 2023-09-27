@@ -2,7 +2,7 @@
 
 export  function FooterComponent() {
   return (
-    <footer className="w-full">
+    <footer className="min-w-screen">
         <div className="bg-custom-gray w-full px-[21px] h-[23px] flex">
             <div className=" w-[648px] text-[10px] flex justify-between items-center text-custom-yellow">
                 <p>BEHANCE</p>
