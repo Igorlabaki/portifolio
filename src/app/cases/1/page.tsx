@@ -35,7 +35,7 @@ export default function Case1Page() {
                     </div>
                 </div>
             </div>
-            <div className="flex gap-x-[16px] text-[12px] mb-[90px]">
+            <div className="flex gap-x-[16px] text-[12px]">
                 <div className="text-custom-yellow w-[452px] text-justify h-[584.07px] flex flex-col justify-between ">
                     <div className="flex flex-col gap-y-[16px]">
                         <p>My contribution in this project was centered around creating wireframes, with the primary goal of enhancing usability to provide an exceptional driving experience for motorists. I worked closely with our stakeholders, incorporating valuable feedback and facilitating co-creations that enriched the final outcome. My involvement spanned the entire project lifecycle, culminating in the creation of user interfaces (UI Design).</p>
