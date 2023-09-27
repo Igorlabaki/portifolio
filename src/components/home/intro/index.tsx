@@ -18,9 +18,7 @@ export default function IntroComponent() {
                 </div>
             </div>
             <div className='absolute right-0 top-0 z-40'>
-                <div className='w-[516px] h-[687px] relative'>
-                <Image src={"/images/home/texture.png"} className='w-full h-full' alt='ritghBox' layout="fill" objectFit={'cover'}/>
-                </div>
+                <ImageComponent  alt='ritghBox'  w="w-[516px]" h="h-[687px]"  src={"/images/home/texture.png"}/>
             </div>
             <div className="absolute bottom-1 right-0 ">
                 <p className="text-custom-yellow text-[12px] my-[4px] w-full flex justify-end pr-[4px]">by florence</p>
