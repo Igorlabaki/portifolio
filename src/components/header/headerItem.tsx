@@ -13,6 +13,6 @@ export function HeaderItemComponent({text}:HeaderProps) {
   const BgChange = `/${url.toLowerCase()}` === pathname 
 
   return (
-    <Link href={redirect}  className={`text-[10px] w-[185px] h-[24px] font-wtGothic py-[6px] px-[10px] ${homeBgChange || BgChange ? "text-black bg-custom-yellow" : "text-custom-yellow bg-custom-black"}`}>{text}</Link>
+    <Link href={redirect}  className={`text-[10px] w-[185px] h-[24px] font-wtGothic py-[6px] px-[10px] ${homeBgChange || BgChange ? "text-black bg-custom-white" : "text-custom-yellow bg-custom-black"}`}>{text}</Link>
   )
 }
