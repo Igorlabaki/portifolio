@@ -1,10 +1,14 @@
 import { ImageComponent } from "@/components/util/image";
+import localFont from "next/font/local";
 
+const helvetica = localFont({
+  src: './../../app/fonts/Helvetica-Bold.ttf',
+})
 
 export default function ServicesPage() {
   return (
     <section className="ml-[117px] mr-[52px] relative">
-      <p className="text-[200px] text-custom-white font-[700] relative z-50 pt-[200px]">DYNAMIC & ADAPTABLE</p>
+      <p className={`text-[200px] text-custom-white font-[700] relative z-50 pt-[200px] ${helvetica.className}`}>DYNAMIC & ADAPTABLE</p>
       <div className="absolute top-0 right-0 z-30">
         <ImageComponent alt="foto" w="w-[714px]" h="h-[998.84px]" src={"/images/services/mortal.png"} containerClassname="z-20"/>
       </div>
