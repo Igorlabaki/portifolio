@@ -22,12 +22,12 @@ export default function IntroComponent() {
             </div>
             <div className=' absolute right-0 top-0'>
                 <ImageComponent alt="manWalking" w="w-[516px]" h="h-[687px]" src={"/images/home/manWalking.png"}/>
-                <div className={`z-50 bottom-[251px] flex justify-between items-center  h-[105px] absolute ${animation ? "w-[160px] right-[27px] " :"w-[120px] right-[47px] "} duration-700`} >
+                <div className={`z-50 bottom-[251px] flex justify-between items-center   absolute ${animation ? "w-[160px] right-[27px] h-[137px]" :"w-[120px] right-[47px] h-[105px] "} duration-700`} >
                     <ImageComponent  alt='leftBox'   w={animation ? "w-[37px]" : "w-[27px] duration-700"} h={animation ? "h-[137px]" : "h-[102px] duration-700"} src={"/images/home/left.png"} /> 
                     <ImageComponent  alt='ritghBox' w={animation ? "w-[37px]" : "w-[27px] duration-700"} h={animation ? "h-[137px]" : "h-[102px] duration-700"} src={"/images/home/rigth.png"} /> 
                 </div>
             </div>
-            <div className='absolute right-0 top-0 z-40'>
+            <div className={`absolute right-0 top-0 z-40   ${animation ? "opacity-100" : "opacity-30"}  duration-700 `}>
                 <ImageComponent  alt='ritghBox' w={"w-[813px]"} h="h-[687px]"  src={"/images/home/texture-2.png"} containerClassname="brightness-200"/>
             </div>
         </div>
