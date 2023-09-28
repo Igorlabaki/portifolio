@@ -19,7 +19,7 @@ const config: Config = {
       },
       fontFamily: {
         helvetica: [''],
-        mono: ['var(--font-roboto-mono)'],
+        wtGothic: ['var(--font-roboto-mono)'],
       },
     },
   },

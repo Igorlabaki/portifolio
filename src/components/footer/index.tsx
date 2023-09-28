@@ -1,3 +1,9 @@
+import localFont from "next/font/local"
+
+
+const helvetica = localFont({
+  src: './../../app/fonts/Helvetica-Bold.ttf',
+})
 
 
 export  function FooterComponent() {
@@ -10,7 +16,7 @@ export  function FooterComponent() {
                 <p>MEDIUM</p>
             </div>
         </div>
-        <h3 className="text-custom-yellow text-[200px] font-[700] h-fit w-full">©BERLIN 2023</h3>
+        <h3 className={`text-custom-yellow text-[200px] font-[700] h-fit w-full ${helvetica.className}`}>©BERLIN 2023</h3>
     </footer>
   )
 }

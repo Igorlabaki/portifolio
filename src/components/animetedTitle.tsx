@@ -7,7 +7,7 @@ interface AnimetedTitleProps{
 }
 
 const helvetica = localFont({
-    src: './fonts/Helvetica-Bold.ttf',
+    src: './../app/fonts/Helvetica-Bold.ttf',
 })
   
 
