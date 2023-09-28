@@ -4,8 +4,13 @@ import {motion} from "framer-motion"
 import localFont from "next/font/local";
 import { ImageComponent } from "../../util/image";
 
-const helvetica = localFont({
+const helveticaBold = localFont({
     src: './../../../app/fonts/Helvetica-Bold.ttf',
+})
+
+
+const helveticaMedium = localFont({
+    src: './../../../app/fonts/HelveticaNeue-Light.otf',
 })
   
 
@@ -15,9 +20,9 @@ export default function IntroComponent() {
     <div className="w-full">
         <div className="relative flex justify-start items-start" onMouseOver={() => setAnimation(true)} onMouseOut={() => setAnimation(false)}>
             <div className={`relative z-50 w-[807px] h-[625px] flex justify-start items-start pt-[28px] ${animation ? "bg-transparent" : "bg-custom-black"}  duration-700 flex-col`}>
-                <p className={`leading-[220px] font-[700] text-[250px] ${animation ? "text-custom-orange" : "text-custom-white"}  duration-500 ${helvetica.className} `}>HELLO</p>
-                <p className={`leading-[220px] font-[700] text-[250px] ${animation ? "text-custom-orange" : "text-custom-white"}  duration-500 ${helvetica.className} `}>DEAR</p>
-                <p className={`leading-[220px] font-[700] text-[250px] ${animation ? "text-custom-orange" : "text-custom-white"}  duration-500 ${helvetica.className} `}>FRIEND</p>
+                <p className={`leading-[220px] font-[700] text-[250px] ${animation ? "text-custom-orange" : "text-custom-white"}  duration-500 ${helveticaBold.className} `}>HELLO</p>
+                <p className={`leading-[220px] spa font-[700] text-[250px] ${animation ? "text-custom-orange" : "text-custom-white"} tracking-[1.5rem] duration-500 ${helveticaMedium.className} `}>DEAR</p>
+                <p className={`leading-[220px] font-[700] text-[250px] ${animation ? "text-custom-orange" : "text-custom-white"}  duration-500 ${helveticaBold.className} `}>FRIEND</p>
                 <p className='text-[12px] text-custom-yellow w-fit rotate-[-90deg] bottom-0 absolute left-[-48px]'>product designer</p>
             </div>
             <div className=' absolute right-0 top-0'>
