@@ -21,7 +21,7 @@ function AnimatedText() {
       <AnimatePresence mode='wait'>
         <motion.h3
           key={currentPhraseIndex}
-          className="text-custom-yellow text-[200px] font-[700] h-fit w-full"
+          className="text-custom-yellow text-[250px] font-[700] h-fit w-full"
           initial={{ x: window.innerWidth }}
           animate={{ x: 0 }}
           exit={{ x: -window.innerWidth }}

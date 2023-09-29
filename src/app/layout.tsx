@@ -4,6 +4,7 @@ import './globals.css'
 import localFont from 'next/font/local'
 import type { Metadata } from 'next'
 import { FooterComponent } from '@/components/footer'
+import ScrollProgressComponent from '@/components/scroolProgress'
 
 export const metadata: Metadata = {
   title: 'Florence',
@@ -22,10 +23,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+       <head>
+        <link
+          rel="icon"
+          href="/images/icon/icon.png"
+          sizes="any"
+        />
+      </head>
           <body className={`bg-custom-black max-w-[1440px] flex flex-col mx-auto ${wtGothic.className}`} >
             <HeaderComponent />
-            <main>
-             {children}
+            <main className='relative overflow-hidden'>
+              <ScrollProgressComponent>
+                {children}
+              </ScrollProgressComponent>
             </main>
             <FooterComponent />
           </body>

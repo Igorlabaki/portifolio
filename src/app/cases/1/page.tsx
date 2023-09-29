@@ -1,15 +1,21 @@
+"use client"
+import {motion} from "framer-motion"
 import { ImageComponent } from "@/components/util/image";
 
 
 export default function Case1Page() {
   return (
-    <div className="relative">
-        <ImageComponent alt="car" w="w-[1440px]" h="h-[620px]" src={"/images/cases/car-banner.png"}/>
-        <div className="absolute top-[225px] text-custom-white left-[80px] text-[250px] font-[700]">
+    <motion.div
+    initial={{y: 1000, opacity: 0, width: 0}}
+    animate={{y: 0, opacity: 1, width: "100%"}}
+    transition={{duration: 0.7, ease: "linear"}}
+    className="relative">
+        <ImageComponent alt="car" w="w-[1440px]" h="min-h-[620px]   " src={"/images/cases/car-banner.png"}/>
+        <div className="absolute top-[225px] text-custom-white left-[80px] text-[250px] font-[700] font-helvetica">
             <p>VF7</p>
             <p>VINFAST</p>
         </div>
-        <div className="mt-[190px] ml-[80px] flex flex-col gap-y-[40px] text-[12px]">
+        <div className="mt-[190px] ml-[80px] flex flex-col gap-y-[40px] text-[12px] leading-[16px]">
             <div className="flex gap-x-[20px]">
                 <ImageComponent alt="car" w="w-[610px]" h="h-[410px]" src={"/images/cases/steering.png"}/>
                 <div className="w-[613px] flex flex-col justify-between items-start">
@@ -35,7 +41,7 @@ export default function Case1Page() {
                     </div>
                 </div>
             </div>
-            <div className="flex gap-x-[16px] text-[12px]">
+            <div className="flex gap-x-[16px] text-[12px] leading-[16px]">
                 <div className="text-custom-yellow w-[452px] text-justify h-[584.07px] flex flex-col justify-between ">
                     <div className="flex flex-col gap-y-[16px]">
                         <p>My contribution in this project was centered around creating wireframes, with the primary goal of enhancing usability to provide an exceptional driving experience for motorists. I worked closely with our stakeholders, incorporating valuable feedback and facilitating co-creations that enriched the final outcome. My involvement spanned the entire project lifecycle, culminating in the creation of user interfaces (UI Design).</p>
@@ -50,6 +56,6 @@ export default function Case1Page() {
                 <ImageComponent alt="car" w="w-[770px]" h="h-[584.07px]" src={"/images/cases/panel.png"}/>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }

@@ -21,7 +21,10 @@ export default function ContentComponent() {
         <ItemGridComponent  width="w-[400px]" heigth="h-[462px]" subTitle="STRM" title="Plataforms">
           <ImageComponent containerClassname="z-20" alt="foto" w="w-[400px]" h="h-[462px]" src={"/images/home/home-image-2.png"}/>
         </ItemGridComponent>
-        <ImageComponent  containerClassname="absolute top-[-111px]"  alt="foto" w="w-[400px]" h="h-[312px]" src={"/images/home/home-image-3.png"}/>
+
+        <ItemGridComponent  width="w-[400px] relative" heigth="h-[312px]" subTitle="STRM" title="Plataforms">
+          <ImageComponent  containerClassname="absolute top-[-111px]"  alt="foto" w="w-[400px]" h="h-[312px]" src={"/images/home/home-image-3.png"}/>
+        </ItemGridComponent>
         <ImageComponent  containerClassname="absolute top-[-111px]"  alt="foto" w="w-[400px]" h="h-[312px]" src={"/images/home/home-image-4.png"}/>
         <ItemGridComponent  width="w-[400px]" heigth="h-[505px]" subTitle="Luxoft" title="Design System">
           <ImageComponent containerClassname="z-20" alt="foto" w="w-[400px]" h="h-[505px]" src={"/images/home/home-image-5.png"}/>

@@ -5,9 +5,8 @@ export  function HeaderComponent() {
     <header className="flex justify-between items-center bg-custom-black">
         <HeaderItemComponent text="HOME"/>
         <HeaderItemComponent text="SERVICES"/>
-        <HeaderItemComponent text="SKILLS"/>
+        <HeaderItemComponent text="PROCESS"/>
         <HeaderItemComponent text="ABOUT"/>
-        <HeaderItemComponent text="HIRE ME"/>
     </header>
   )
 }

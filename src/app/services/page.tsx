@@ -31,7 +31,7 @@ export default function ServicesPage() {
           </div>
         </div>
         <div className="flex gap-x-[48px] justify-end items-end">
-          <ImageComponent alt="column" w="w-[611px]" h="h-[855.83px]" src={"/images/services/oldLady.png"} containerClassname="z-30"/>
+          <ImageComponent alt="column" w="w-[611px]" h="h-[855.83px]" src={"/images/services/blackGirl.png"} containerClassname="z-30"/>
           <ImageComponent alt="car" w="w-[61px]" h="h-[48.61px]" src={"/images/cases/rectangle.png"}/>
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function ServicesPage() {
         </div>
         <p className="text-white ml-[315px] leading-[16px] w-[295px] text-justify mt-[56px] text-[12px]">Product design is the process of creating and refining digital or physical products to meet user needs and solve specific problems effectively and aesthetically. It involves a combination of research, ideation, user experience, visual design, prototyping, and testing to ensure that the final product delivers a seamless and delightful user experience.</p>
         <div className="mt-[125px] flex gap-x-[20px] justify-center items-center">
-          <ImageComponent alt="column" w="w-[610px]" h="h-[822px]" src={"/images/services/blackGirl.png"} containerClassname="z-30"/>
+          <ImageComponent alt="column" w="w-[610px]" h="h-[822px]" src={"/images/services/oldLadys.png"} containerClassname="z-30"/>
           <ServiceFormComponent />
         </div>
       </div>

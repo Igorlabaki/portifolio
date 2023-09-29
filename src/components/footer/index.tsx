@@ -9,7 +9,7 @@ const helvetica = localFont({
 
 export  function FooterComponent() {
   return (
-    <footer className="min-w-screen mt-[72px] max-w-[1440px] overflow-hidden">
+    <footer className="min-w-screen my-[72px]  overflow-hidden">
         <div className="bg-custom-gray w-full px-[21px] h-[23px] flex">
             <div className=" w-[648px] text-[10px] flex justify-between items-center text-custom-yellow">
                 <p>BEHANCE</p>
