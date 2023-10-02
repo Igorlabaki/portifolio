@@ -62,8 +62,8 @@ export default function ContentComponent() {
         </AnimatedVerticalComponent>
 
           <motion.div initial={{y: 300}} animate={{y:animation ? 0 : 300}} transition={{duration: 1.3}}>
-            <ItemGridComponent  width="relative w-[820px]  z-50" heigth="h-[289px]  translate-y-[-303px]" subTitle="  Mercedes Benz" title="UI Concepts">
-              <ImageComponent containerClassname="" alt="foto" w="w-[820px] z-50" h="h-[289px]" src={"/images/home/home-image-6.png"}/> 
+            <ItemGridComponent  width="relative w-[820px] " heigth="h-[289px]" subTitle="  Mercedes Benz" title="UI Concepts">
+              <ImageComponent containerClassname="" alt="foto" w="w-[820px] " h="h-[289px]" src={"/images/home/home-image-6.png"}/> 
             </ItemGridComponent>
           </motion.div>
 
