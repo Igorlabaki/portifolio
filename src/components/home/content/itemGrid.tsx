@@ -42,7 +42,7 @@ export default function ItemGridComponent({heigth,width,title,subTitle, children
 
   return (
     <>
-          <div  className={`${heigth} ${width} bg-custom-black block`} onClick={() => {
+          <div  className={`${heigth} ${width} bg-custom-black `} onClick={() => {
                 setfirst(() => true)
           }}>
             <motion.div  
@@ -54,7 +54,7 @@ export default function ItemGridComponent({heigth,width,title,subTitle, children
                     >
                 <div 
                   className={`bg-black absolute inset-0  scale z-30 text-[16px] text-custom-yellow flex flex-col justify-center items-center
-                    ${animation ? "opacity-70" : "opacity-0"} duration-700`}
+                    ${animation ? "opacity-50" : "opacity-0"} duration-700`}
                   >
                 </div>
                   {animation &&

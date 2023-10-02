@@ -18,7 +18,7 @@ function AnimatedText() {
 
   return (
     <div style={{ overflow: "hidden" }}>
-      <AnimatePresence mode='wait'>
+      <AnimatePresence mode='popLayout'>
         <motion.h3
           key={currentPhraseIndex}
           className="text-custom-yellow text-[250px] font-[700] h-fit w-full"

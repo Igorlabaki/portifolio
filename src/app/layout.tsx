@@ -33,9 +33,7 @@ export default function RootLayout({
           <body className={`bg-custom-black max-w-[1440px] flex flex-col mx-auto ${wtGothic.className}`} >
             <HeaderComponent />
             <main className='relative overflow-hidden'>
-              <ScrollProgressComponent>
                 {children}
-              </ScrollProgressComponent>
             </main>
             <FooterComponent />
           </body>
