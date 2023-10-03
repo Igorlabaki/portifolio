@@ -6,11 +6,7 @@ import IntroServiceComponent from "@/components/services/intro";
 import ScrollProgressComponent from "@/components/scroolProgress";
 import { Variants, motion } from "framer-motion";
 import AnimatedVerticalComponent from "@/components/animatedVertical";
-
-
-const wtGothic = localFont({
-  src: './../../app/fonts/WTGothic-Light.ttf',
-})
+import { wtGothic } from "@/fonts/constants";
 
 export default function ServicesPage() {
  
