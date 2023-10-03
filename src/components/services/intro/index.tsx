@@ -1,17 +1,15 @@
 "use client"
 import { ImageComponent } from "@/components/util/image";
+import { helveltica } from "@/fonts/constants";
 import localFont from "next/font/local";
 import { useState } from "react";
 
-const helvetica = localFont({
-    src: './../../../app/fonts/Helvetica-Bold.ttf',
-  })
-  
+
 export default function IntroServiceComponent() {
     const [animation, setAnimation] = useState<boolean>(false)
   return (
     <div onMouseOver={() => setAnimation(true)} onMouseOut={() => setAnimation(false)}>
-         <p className={`text-[200px]  font-[700] relative z-50 pt-[200px] ${helvetica.className} ${animation ? "text-custom-orange" : "text-custom-white"} duration-700 `}>DYNAMIC & ADAPTABLE</p>
+         <p className={`text-[200px]  font-[700] relative z-50 pt-[200px] ${helveltica.className} ${animation ? "text-custom-orange" : "text-custom-white"} duration-700 `}>DYNAMIC & ADAPTABLE</p>
       <div className="absolute top-0 right-0 z-30 ">
         <ImageComponent alt="foto" w="w-[714px]" h="h-[998.84px]" src={"/images/services/mortal.png "} containerClassname="z-20"/>
       </div>
