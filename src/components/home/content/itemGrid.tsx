@@ -35,7 +35,7 @@ export default function ItemGridComponent({heigth,width,title,subTitle, children
           });
         };
         toggleAnimation()
-        setTimeout(() => replace(`/cases/${url}`), 500 )
+        setTimeout(() => replace(`/cases/${url}`), 400 )
         
       }
     }, [first])
