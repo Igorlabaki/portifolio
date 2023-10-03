@@ -5,6 +5,7 @@ import {motion, useAnimation} from "framer-motion"
 import { useRouter } from "next/navigation";
 
 interface ItemGridProps{
+    url: string;
     width: string;
     title: string;
     heigth: string;
@@ -12,7 +13,7 @@ interface ItemGridProps{
     children: ReactNode;
 }
 
-export default function ItemGridComponent({heigth,width,title,subTitle, children}:ItemGridProps) {
+export default function ItemGridComponent({heigth,width,title,subTitle, children,url}:ItemGridProps) {
     const [animation, setAnimation] = useState<boolean>(false)
     const [first, setfirst] = useState<boolean>(false)
     const controls = useAnimation()
@@ -34,7 +35,7 @@ export default function ItemGridComponent({heigth,width,title,subTitle, children
           });
         };
         toggleAnimation()
-        setTimeout(() => replace("/cases/1"), 500 )
+        setTimeout(() => replace(`/cases/${url}`), 500 )
         
       }
     }, [first])

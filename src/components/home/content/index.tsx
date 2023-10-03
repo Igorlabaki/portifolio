@@ -9,7 +9,7 @@ import { scroll } from "framer-motion"
 export default function ContentComponent() {
   const [first, setfirst] = useState(false)
   const [animation, setAnimation] = useState(false)
-  const [progressY, setProgressY] = useState(0)
+
   useEffect(() => {
     scroll(progress => {
       if(progress * 100 > 70){
@@ -27,7 +27,7 @@ export default function ContentComponent() {
           </p>
         </AnimatedVerticalComponent>
         <AnimatedVerticalComponent yStart={400}>
-          <ItemGridComponent  width="w-[400px]" heigth="h-[351px]" subTitle="VinFast" title="Eletric Vehicle">
+          <ItemGridComponent url="vinFast"   width="w-[400px]" heigth="h-[351px]" subTitle="VinFast" title="Eletric Vehicle">
             <ImageComponent
                 containerClassname="z-20"
                 alt="foto"
@@ -38,31 +38,31 @@ export default function ContentComponent() {
           </ItemGridComponent>
         </AnimatedVerticalComponent>
         <AnimatedVerticalComponent yStart={500}>
-          <ItemGridComponent  width="w-[400px]" heigth="h-[462px]" subTitle="STRM" title="Plataforms">
+          <ItemGridComponent  url="strm"  width="w-[400px]" heigth="h-[462px]" subTitle="STRM" title="Plataforms">
             <ImageComponent containerClassname="z-20" alt="foto" w="w-[400px]" h="h-[462px]" src={"/images/home/home-image-2.png"}/>
           </ItemGridComponent>
         </AnimatedVerticalComponent>
 
         <AnimatedVerticalComponent>
-          <ItemGridComponent  width="w-[400px] relative z-20" heigth="max-h-[312px] translate-y-[-111px]" subTitle="Zebra" title="Fintech">
+          <ItemGridComponent  url="zebra" width="w-[400px] relative z-20" heigth="max-h-[312px] translate-y-[-111px]" subTitle="Zebra" title="Fintech">
             <ImageComponent  containerClassname=""  alt="foto" w="w-[400px]" h="h-[312px]" src={"/images/home/home-image-3.png"}/>
           </ItemGridComponent>
         </AnimatedVerticalComponent>
 
         <AnimatedVerticalComponent yStart={400}>
-          <ItemGridComponent  width="w-[400px] relative  z-20" heigth="max-h-[312px] translate-y-[-111px] overflow-hidden" subTitle="Resolva Meu Look" title="Research">
+          <ItemGridComponent url="resolvaMeuLook"  width="w-[400px] relative  z-20" heigth="max-h-[312px] translate-y-[-111px] overflow-hidden" subTitle="Resolva Meu Look" title="Research">
             <ImageComponent  containerClassname=" "  alt="foto" w="w-[400px]" h="h-[312px]" src={"/images/home/home-image-4.png"}/>
           </ItemGridComponent>
         </AnimatedVerticalComponent>
 
         <AnimatedVerticalComponent>
-          <ItemGridComponent  width="w-[400px]" heigth="h-[505px]" subTitle="Luxoft" title="Design System">
+          <ItemGridComponent url="luxoft"   width="w-[400px]" heigth="h-[505px]" subTitle="Luxoft" title="Design System">
             <ImageComponent containerClassname="z-20" alt="foto" w="w-[400px]" h="h-[505px]" src={"/images/home/home-image-5.png"}/>
           </ItemGridComponent>
         </AnimatedVerticalComponent>
 
           <motion.div initial={{y: 300}} animate={{y:animation ? 0 : 300}} transition={{duration: 1.3}}>
-            <ItemGridComponent  width="relative w-[820px] " heigth="h-[289px]  translate-y-[-303px]" subTitle="  Mercedes Benz" title="UI Concepts">
+            <ItemGridComponent url="mercedesBenz" width="relative w-[820px] " heigth="h-[289px]  translate-y-[-303px]" subTitle="Mercedes Benz" title="UI Concepts">
               <ImageComponent containerClassname="" alt="foto" w="w-[820px] " h="h-[289px]" src={"/images/home/home-image-6.png"}/> 
             </ItemGridComponent>
           </motion.div>

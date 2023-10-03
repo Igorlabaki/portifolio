@@ -3,16 +3,9 @@ import {useState} from "react"
 import localFont from "next/font/local";
 import { ImageComponent } from "../../util/image";
 
-const helveticaBold = localFont({
-    src: './../../../app/fonts/Helvetica-Bold.ttf',
-})
-
-
-const helveticaMedium = localFont({
-    src: './../../../app/fonts/HelveticaNeue-Light.otf',
-})
 
 import RectangleAnimation from "./rectangleAnimation";
+import { helveticaBold, helveticaMedium } from "@/fonts/constants";
   
 export default function IntroComponent() {
     const [animation, setAnimation] = useState<boolean>(false)

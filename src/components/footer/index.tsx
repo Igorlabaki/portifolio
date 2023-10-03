@@ -1,11 +1,6 @@
 "use client"
-import localFont from "next/font/local"
+import { helveltica } from "@/fonts/constants"
 import {motion} from "framer-motion"
-
-const helvetica = localFont({
-  src: './../../app/fonts/Helvetica-Bold.ttf',
-})
-
 
 export  function FooterComponent() {
   return (
@@ -18,7 +13,7 @@ export  function FooterComponent() {
             </div>
         </div>
         <motion.h3
-      className={`text-custom-yellow text-[200px] font-[700] h-fit w-full flex ${helvetica.className}`}
+      className={`text-custom-yellow text-[200px] font-[700] h-fit w-full flex ${helveltica.className}`}
       initial={{ x: "100%" }} // Define a posição inicial fora da tela à direita
       animate={{ x: "-100%" }} // Define a posição final fora da tela à esquerda
       transition={{ repeat: Infinity, duration: 10, ease: "linear" }} // Configura a animação infinita

@@ -2,13 +2,14 @@ import { Variants, motion } from 'framer-motion'
 import {useState, useEffect} from 'react'
 import { ImageComponent } from '../util/image'
 import AnimatedVerticalComponent from '../animatedVertical';
+import { BlackWhiteAnimation } from './blackWhiteAnimation';
 
 export  function SecondCaseComponent() {
     const [current, setCurrent] = useState(0)
 
     const imageList = [
-        {src: "/images/cases/car4.png"},
-        {src: "/images/cases/car3.png"}
+        {srcRegular: "/images/cases/car3.png",srcBalckWhite: "/images/cases/car3BlackWhite.png" },
+        {srcRegular: "/images/cases/car4.png",srcBalckWhite: "/images/cases/car4.png"}
     ]
 
     const onPrevClick = () => {
@@ -55,9 +56,9 @@ export  function SecondCaseComponent() {
             <div className='flex flex-nowrap max-w-[770px] overflow-hidden'>
                 <motion.div className='flex' animate={{x: current === 0 ? 0 : "-50%"}} transition={{duration: 1.5}}>
                     {
-                        [...imageList].map((item: {src: string}, index: number) => {
+                        [...imageList].map((item: {srcRegular: string,srcBalckWhite: string }, index: number) => {
                             return(
-                                <ImageComponent alt="car" w="min-w-[770px]" h="h-[584.00px]" src={item.src} key={index}/>
+                                <BlackWhiteAnimation w="min-w-[770px]" h="h-[584.00px]" srcBalckWhite={item.srcBalckWhite} srcRegular={item.srcRegular} key={index}/>
                             )
                         })
                     }
