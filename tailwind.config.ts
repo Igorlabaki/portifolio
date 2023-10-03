@@ -17,6 +17,13 @@ const config: Config = {
         "custom-gray-ligth": "#525252",
         "custom-gray-medium": "#202020",
       },
+      screens: {
+        'medium': '1248px',
+        // => @media (min-width: 640px) { ... }
+  
+        'large': '1440px',
+        // => @media (min-width: 768px) { ... }
+      },
       fontFamily: {
         helvetica: [''],
         wtGothic: ['var(--font-roboto-mono)'],

@@ -18,8 +18,8 @@ export default function Case1Page() {
         opacity: { duration: 2, ease: "linear" }, // Define a duração e a curva de animação para 'opacity'
       }}
       className={`relative `} >
-          <HeaderCaseComponent subtitle="VINFAST" title="VF7" src="/images/cases/car-banner.png" titleClassname="top-[225px]   left-[80px]" textureSrc="/images/cases/texture.png"/>
-          <div className="mt-[190px] ml-[80px] flex flex-col gap-y-[40px] text-[12px] leading-[16px]" >
+          <HeaderCaseComponent subtitle="VINFAST" title="VF7" src="/images/cases/car-banner.png" titleClassname="top-[225px]   left-[60px]" textureSrc="/images/cases/texture.png"/>
+          <div className="mt-[190px] ml-[60px] flex flex-col gap-y-[40px] text-[12px] leading-[16px]" >
               <FirstCaseComponent />
               <SecondCaseComponent/>
           </div>

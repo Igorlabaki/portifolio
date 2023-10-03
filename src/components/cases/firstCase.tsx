@@ -9,7 +9,7 @@ export  function FirstCaseComponent() {
   return (
     <motion.div className="flex gap-x-[20px]">
                 <AnimatedVerticalComponent yStart={400}>
-                    <BlackWhiteAnimation w="w-[610px]" h="h-[410px]" srcBalckWhite="/images/cases/car2BlackWhite.png" srcRegular='/images/cases/car2.png'/>
+                    <BlackWhiteAnimation w="w-[514px] large:w-[610px]" h="h-[410px]" srcBalckWhite="/images/cases/car2BlackWhite.png" srcRegular='/images/cases/car2.png'/>
                 </AnimatedVerticalComponent>
                 <AnimatedVerticalComponent className="w-[613px] flex flex-col justify-between items-start ">
                 <span>

@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen h-full gap-y-[56px] bg-custom-black flex-col items-center justify-between pl-[117px]">
+    <main className="flex min-h-screen h-full gap-y-[56px] bg-custom-black flex-col items-center justify-between pl-[99px] pr-[100px] large:pr-0 large:pl-[117px] ">
       <ScrollProgressComponent>
         <IntroComponent/>
         <ContentComponent />   

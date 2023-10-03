@@ -26,11 +26,11 @@ export default function Case1Page() {
       className={`relative `} >
         <div className="relative" onMouseOver={() => setbannerAnimation(true)} onMouseOut={() => setbannerAnimation(false)}>
           <ImageComponent alt="car" w={"w-[1440px] mt-[-50px]"} h={"min-h-[598px] h-full"} src={"/images/cases/mercedesBenz/mercedesBenz-banner.png"}/>
-          <div className={`absolute top-[332px] left-[30px] font-[700] flex flex-col ${helveltica.className}  ${bannerAnimation ? "text-custom-orange" : "text-custom-white"} duration-700 `}>
-              <p className="text-[220px] leading-[189px] z-50">MERCEDES</p>
-              <p className="text-[220px] leading-[189px] z-50">BENZ</p>
+          <div className={`absolute top-[380px] large:top-[332px] left-[80px] large:left-[30px] font-[700] flex flex-col ${helveltica.className}  ${bannerAnimation ? "text-custom-orange" : "text-custom-white"} duration-700 `}>
+              <p className="text-[170px] large:text-[220px] leadeing-[150px] large:leading-[189px] z-50">MERCEDES</p>
+              <p className="text-[170px] large:text-[220px] leadeing-[150px] large:leading-[189px] z-50">BENZ</p>
           </div>
-          <div className={`absolute left-[-50px] top-[10px] z-40 w-[765px]  h-[701px]   ${bannerAnimation ? "opacity-90 h-[701px] " : "opacity-0"}  duration-300 overflow-hidden`}>
+          <div className={`absolute left-[-38px] top-[10px] z-40 w-[765px]  h-[701px]   ${bannerAnimation ? "opacity-90 h-[701px] " : "opacity-0"}  duration-300 overflow-hidden`}>
               <ImageComponent  alt='ritghBox' w={"w-[465px]"} h="h-[701px]"  src={"/images/cases/strm/strm-texture.png"} containerClassname="brightness-200"/>
           </div>
           <div className=" h-[57px] w-10 absolute z-30 bottom-[-57px] left-[20px] bg-custom-black"/>
@@ -38,7 +38,7 @@ export default function Case1Page() {
         <div className="mt-[190px] ml-[80px] flex flex-col gap-y-[40px] text-[12px] leading-[16px]" >
           <motion.div className="flex gap-x-[20px]">
             <AnimatedVerticalComponent yStart={400}>
-              <BlackWhiteAnimation w="w-[610px]" h="h-[410px]" srcBalckWhite="/images/cases/mercedesBenz/mercedesBenz-case1-pb.png" srcRegular='/images/cases/mercedesBenz/mercedesBenz-case1-color.png'/>
+              <BlackWhiteAnimation w="w-[514px] large:w-[610px]" h="h-[410px]" srcBalckWhite="/images/cases/mercedesBenz/mercedesBenz-case1-pb.png" srcRegular='/images/cases/mercedesBenz/mercedesBenz-case1-color.png'/>
             </AnimatedVerticalComponent>
             <AnimatedVerticalComponent className="w-[613px] flex flex-col justify-between items-start ">
                 <span>
@@ -81,7 +81,7 @@ export default function Case1Page() {
                   </div>
               </div>
               <AnimatedVerticalComponent yStart={400} className='relative'>
-                <BlackWhiteAnimation srcBalckWhite="/images/cases/mercedesBenz/mercedesBenz-case2-pb.png" h="h-[587px]"  w="w-[767px]" srcRegular="/images/cases/mercedesBenz/mercedesBenz-case2-color.png"/>
+                <BlackWhiteAnimation srcBalckWhite="/images/cases/mercedesBenz/mercedesBenz-case2-pb.png" h="h-[587px]"  w="w-[676px] large:w-[770px]" srcRegular="/images/cases/mercedesBenz/mercedesBenz-case2-color.png"/>
               </AnimatedVerticalComponent>
             </div>
           </div>

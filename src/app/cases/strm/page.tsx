@@ -26,8 +26,8 @@ export default function Case1Page() {
       className={`relative `} >
         <div className="relative" onMouseOver={() => setbannerAnimation(true)} onMouseOut={() => setbannerAnimation(false)}>
           <ImageComponent alt="car" w={"w-[1440px] mt-[-50px]"} h={"min-h-[598px] h-full"} src={"/images/cases/strm/strm-banner.png"}/>
-          <div className={`absolute top-[381px] left-[300px] font-[700] flex flex-col ${helveltica.className}  ${bannerAnimation ? "text-custom-orange" : "text-custom-white"} duration-700 `}>
-              <p className="text-[340px] leading-[292px] z-50">STRM</p>
+          <div className={`absolute top-[390px] large:top-[381px] left-[150px] large:left-[300px] font-[700] flex flex-col ${helveltica.className}  ${bannerAnimation ? "text-custom-orange" : "text-custom-white"} duration-700 `}>
+              <p className="text-[300px] large:text-[340px] leading-[292px] z-50">STRM</p>
           </div>
           <div className={`absolute left-[-50px] top-[10px] z-40 w-[765px]  h-[701px]   ${bannerAnimation ? "opacity-90 h-[701px] " : "opacity-0"}  duration-300 overflow-hidden`}>
               <ImageComponent  alt='ritghBox' w={"w-[465px]"} h="h-[701px]"  src={"/images/cases/strm/strm-texture.png"} containerClassname="brightness-200"/>
@@ -37,7 +37,7 @@ export default function Case1Page() {
         <div className="mt-[190px] ml-[80px] flex flex-col gap-y-[40px] text-[12px] leading-[16px]" >
           <motion.div className="flex gap-x-[20px]">
             <AnimatedVerticalComponent yStart={400}>
-              <BlackWhiteAnimation w="w-[610px]" h="h-[410px]" srcBalckWhite="/images/cases/strm/strm-case1-bg.png" srcRegular='/images/cases/strm/strm-case1-color.png'/>
+              <BlackWhiteAnimation w="w-[514px] large:w-[610px]" h="h-[410px]" srcBalckWhite="/images/cases/strm/strm-case1-bg.png" srcRegular='/images/cases/strm/strm-case1-color.png'/>
             </AnimatedVerticalComponent>
             <AnimatedVerticalComponent className="w-[613px] flex flex-col justify-between items-start ">
                 <span>
@@ -84,7 +84,7 @@ export default function Case1Page() {
                   </div>
               </div>
               <AnimatedVerticalComponent yStart={400} className='relative'>
-                <BlackWhiteAnimation srcBalckWhite="/images/cases/strm/strm-case2-bg.png" h="h-[587px]"  w="w-[767px]" srcRegular="/images/cases/strm/strm-case2-color.png"/>
+                <BlackWhiteAnimation srcBalckWhite="/images/cases/strm/strm-case2-bg.png" h="h-[587px]"  w="w-[676px] large:w-[770px]" srcRegular="/images/cases/strm/strm-case2-color.png"/>
               </AnimatedVerticalComponent>
             </div>
           </div>

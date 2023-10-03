@@ -53,12 +53,12 @@ export  function SecondCaseComponent() {
             </div>
         </div>
         <AnimatedVerticalComponent yStart={400} className='relative'>
-            <div className='flex flex-nowrap max-w-[770px] overflow-hidden'>
+            <div className='flex flex-nowrap w-[676px] large:w-[770px] overflow-hidden'>
                 <motion.div className='flex' animate={{x: current === 0 ? 0 : "-50%"}} transition={{duration: 1.5}}>
                     {
                         [...imageList].map((item: {srcRegular: string,srcBalckWhite: string }, index: number) => {
                             return(
-                                <BlackWhiteAnimation w="min-w-[770px]" h="h-[584.00px]" srcBalckWhite={item.srcBalckWhite} srcRegular={item.srcRegular} key={index}/>
+                                <BlackWhiteAnimation w="w-[676px] large:w-[770px]" h="h-[584.00px]" srcBalckWhite={item.srcBalckWhite} srcRegular={item.srcRegular} key={index}/>
                             )
                         })
                     }

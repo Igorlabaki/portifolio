@@ -12,8 +12,8 @@ export  function BlackWhiteAnimation({h,srcRegular,srcBalckWhite,w}:BlackWhiteAn
   const [animation, setAnimation] = useState<boolean>(false)
   return (
     <div className='relative' onMouseOver={() => setAnimation(true)} onMouseOut={() => setAnimation(false)}>
-        <ImageComponent alt="car" w={w} h={h} src={srcBalckWhite} containerClassname={`${animation ?  "opacity-0 hidden" : "flex opacity-100"}  duration-700`} />
-        <ImageComponent alt="car" w={w} h={h} src={srcRegular} containerClassname={`${animation ?  "opacity-100 flex" : " opacity-0 hidden"} duration-700`} />
+        <ImageComponent alt="car" w={w} h={h} src={srcBalckWhite} containerClassname={`${animation ?  "opacity-0 hidden" : "flex opacity-100"}  transition ease-in-out duration-1000`} />
+        <ImageComponent alt="car" w={w} h={h} src={srcRegular} containerClassname={`${animation ?  "opacity-100 flex" : " opacity-0 hidden"} transition ease-in-out duration-1000`} />
     </div>
   )
 }
