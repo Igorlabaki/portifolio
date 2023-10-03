@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 import { FooterComponent } from '@/components/footer'
 import ScrollProgressComponent from '@/components/scroolProgress'
 import { wtGothic } from '@/fonts/constants'
+import ReactQueryProvider from '@/components/providers/reactQueryProvider'
 
 export const metadata: Metadata = {
   title: 'Florence',
@@ -29,11 +30,13 @@ export default function RootLayout({
         />
       </head>
           <body className={`bg-custom-black max-w-[1440px] flex flex-col mx-auto ${wtGothic.className}`} >
-            <HeaderComponent />
-            <main className='relative overflow-hidden'>
-                {children}
-            </main>
-            <FooterComponent />
+            <ReactQueryProvider>
+              <HeaderComponent />
+              <main className='relative overflow-hidden'>
+                  {children}
+              </main>
+              <FooterComponent />
+            </ReactQueryProvider>
           </body>
     </html>
   )
