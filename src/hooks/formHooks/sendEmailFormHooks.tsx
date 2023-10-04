@@ -6,7 +6,7 @@ import { sendEmailSchema } from '@/zod/schemas/sendEmail';
 import { useSendEmailQuery } from '../reactQuery/email/useSendEmailQuery';
 
 export default function UseSendEmailHookForm() {
-  const {sendEmailMutate,IsSendEmailLoading} = useSendEmailQuery()
+  const {sendEmailMutate,IsSendEmailLoading,isSendEmailSuccess} = useSendEmailQuery()
   const {
     watch,
     reset,
@@ -32,6 +32,7 @@ export default function UseSendEmailHookForm() {
     setValue,
     handleSubmit,
     handleOnSubmit,
-    IsSendEmailLoading
+    IsSendEmailLoading,
+    isSendEmailSuccess
   };
 }
