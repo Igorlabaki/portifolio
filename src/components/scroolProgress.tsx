@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 
 interface ScrollProgressProps{
     children: React.ReactNode;
+    xRightPosition?: boolean; 
 }
 
-export default function ScrollProgressComponent({children}:ScrollProgressProps) {
+export default function ScrollProgressComponent({children,xRightPosition}:ScrollProgressProps) {
   const { scrollYProgress } = useScroll();
   const [progressY, setProgressY] = useState(0)
 
@@ -17,7 +18,7 @@ export default function ScrollProgressComponent({children}:ScrollProgressProps) 
   return (
     <>
      <motion.div
-        className="absolute left-[30px] right-0  w-[7px] bg-custom-yellow transform my-[30px]"
+        className={`absolute ${xRightPosition ? "rigth-[30px]" : "left-[30px]"} right-0  w-[7px] bg-custom-yellow transform my-[30px]`}
         initial={{height: 0}}
         animate={{height: `${progressY}%`}}
         transition={{duration: 0.5}}

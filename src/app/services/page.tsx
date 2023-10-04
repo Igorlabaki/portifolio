@@ -55,7 +55,7 @@ export default function ServicesPage() {
         </AnimatedVerticalComponent>
         <AnimatedVerticalComponent className="mt-[125px] flex gap-x-[20px] justify-center items-center">
           <motion.img alt="column" className="w-[610px] h-[822px] z-30" src={"/images/services/oldLadys.png"} />
-          <ServiceFormComponent />
+          <ServiceFormComponent title="Feel free to reach out to me to discuss customization and the creation of your project"/>
         </AnimatedVerticalComponent>
       </div>
     </section>

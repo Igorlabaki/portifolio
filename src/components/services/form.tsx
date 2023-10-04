@@ -6,7 +6,11 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import {FaCheck} from "react-icons/fa"
 
-export  function ServiceFormComponent() {
+interface ServiceFormProps{
+  title: string;
+}
+
+export  function ServiceFormComponent({title}:ServiceFormProps) {
   const {register,handleOnSubmit,handleSubmit,errors,IsSendEmailLoading,isSendEmailSuccess} = UseSendEmailHookForm()
   const controlsNameInput = useAnimation();
   const controlsEmailInput = useAnimation();
@@ -34,12 +38,13 @@ export  function ServiceFormComponent() {
         duration: 3000,
       })
     }
+
   }, [isSendEmailSuccess])
   
 
   return (
     <form className="h-[481px] w-[610px]" onSubmit={handleSubmit(handleOnSubmit)}>
-    <p className="text-custom-yellow text-[12px]  leading-[16px]">Feel free to reach out to me to discuss customization and the creation of your project</p>
+    <p className="text-custom-yellow text-[12px]  leading-[16px]">{title}</p>
     <div className="flex flex-col gap-y-[8px] mt-[48px]">
       <motion.input animate={controlsNameInput}  {...register("name")} type="text" className={`bg-custom-gray-medium px-[25px] py-[16px] text-custom-white text-[12px]  outline-none  ${errors.name ? "border-[2px] border-red-800" : "text-custom-white"} `} placeholder="Name"/>
       <motion.input animate={controlsEmailInput} {...register("email")} type="text" className={`bg-custom-gray-medium px-[25px] py-[16px] text-custom-white text-[12px] outline-none ${errors.email ? " border-[2px] border-red-800" : "text-custom-white"} `} placeholder="E-mail" />
