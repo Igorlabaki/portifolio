@@ -21,8 +21,8 @@ export default function AboutPage() {
               <p className="text-[200px] large:text-[250px] leading-[180px] large:leading-[214px] z-50">DESIGN </p>
               <p className="text-[200px] large:text-[250px] leading-[180px] large:leading-[214px] z-50">MINDSET</p>
           </div>
-          <div className={`absolute   top-[140px] left-0 z-40 w-[890px]  h-[660px]   ${bannerAnimation ? "opacity-90 h-[660px] " : "opacity-0"}  right-0 duration-700 overflow-hidden`}>
-              <ImageComponent  alt='ritghBox' w={"w-[465px]"} h="h-[701px]"  src={"/images/cases/strm/strm-texture.png"} containerClassname="brightness-200"/>
+          <div className={`absolute    top-[110px]  large:top-[140px] left-0 z-40 w-[890px]  min-h-[660px]  ${bannerAnimation ? "opacity-90 h-[660px] " : "opacity-0"}  right-0 duration-700 overflow-hidden`}>
+              <ImageComponent  alt='ritghBox' w={"w-[890px]"} h="min-h-[660px]"  src={"/images/cases/strm/strm-texture.png"} containerClassname="brightness-200"/>
           </div>
           <div className="large:translate-y-[-30px] translate-y-[-80px] realtive w-full flex flex-col justify-end items-end ">
             <div className="absolute bottom-[30px] right-[100px]">
