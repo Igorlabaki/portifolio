@@ -13,7 +13,7 @@ export default function AboutPage() {
       <section className="pr-[100px] mx-auto ">
        <div className="relative min-h-[900px] min-w-screen flex justify-end items-end" onMouseOver={() => setbannerAnimation(true)} onMouseOut={() => setbannerAnimation(false)}>
           <div className="bg-custom-black w-10 h-[140px] absolute top-0 left-[20px]"/>
-          <div className=" h-[100px] w-10 absolute z-30 bottom-0 left-[20px] bg-custom-black"/>
+          <div className=" h-[100px] w-10 absolute z-30 bottom-[30px] large:bottom-0 left-[20px] bg-custom-black"/>
           <div className="absolute top-[110px]  large:top-[140px] left-0">
             <ImageComponent alt="car" w={"w-[890px]"} h={"min-h-[660px] h-full"} src={"/images/about/about-banner.png"} containerClassname=""/>
           </div>
@@ -32,7 +32,7 @@ export default function AboutPage() {
             <p className="text-custom-yellow w-full text-right mt-[10px] text-[12px]">From fashion design to electric car interface design, it's a pleasure to introduce myself</p>
           </div>
         </div>
-        <div className="flex justify-between items-start mt-[100px] large:mt-[176px] leading-[16px] pl-[100px]">
+        <div className="flex justify-between items-start mt-[120px] large:mt-[176px] leading-[16px] pl-[100px]">
           <div className="flex flex-col justify-start items-start gap-y-[188px]">
           <AnimatedVerticalComponent className="text-[12px] leading-[15.6px] fex flex-col justify-end text-custom-yellow relative">
             <p>DESIGN SYSTEMS</p>
