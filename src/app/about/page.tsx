@@ -22,7 +22,7 @@ export default function AboutPage() {
               <p className="text-[200px] large:text-[250px] leading-[180px] large:leading-[214px] z-50">MINDSET</p>
           </div>
           <div className={`absolute    top-[110px]  large:top-[140px] left-0 z-40 w-[890px]  min-h-[660px]  ${bannerAnimation ? "opacity-90 h-[660px] " : "opacity-0"}  right-0 duration-700 overflow-hidden`}>
-              <ImageComponent  alt='ritghBox' w={"w-[890px]"} h="min-h-[660px]"  src={"/images/cases/strm/strm-texture.png"} containerClassname="brightness-200"/>
+              <ImageComponent  alt='ritghBox' w={"w-[890px]"} h="min-h-[660px] h-full"  src={"/images/cases/strm/strm-texture.png"} containerClassname="brightness-200"/>
           </div>
           <div className="large:translate-y-[-30px] translate-y-[-80px] realtive w-full flex flex-col justify-end items-end ">
             <div className="absolute bottom-[30px] right-[100px]">
@@ -39,7 +39,7 @@ export default function AboutPage() {
             <p>VISUAL DESIGN</p>
             <p>DATA VISUALIZATION</p>
           </AnimatedVerticalComponent>
-          <div className="w-[295px] flex flex-col gap-y-[21px] text-[12px]">
+          <div className="w-[295px] flex flex-col gap-y-[21px] text-[12px] text-justify">
             <AnimatedVerticalComponent className="text-custom-yellow">I'm Florence</AnimatedVerticalComponent>
             <div className="flex flex-col gap-y-[61px]">
             <AnimatedVerticalComponent className="text-white">
@@ -64,10 +64,10 @@ export default function AboutPage() {
         <div className=" w-full flex flex-col justify-center items-center leading-[16px] text-[11px] pl-[100px]">
           <div className="mt-[64px]  flex justify-between items-center w-full">
             <div className="text-justify flex flex-col gap-y-[72px] w-[295px]">
-              <AnimatedVerticalComponent className="w-[295px] text-white">As a product designer with a focus on digital interfaces, I continually strive to enhance my skills to create digital experiences that stand out and meet <span className="font-bold">users' needs and expectations</span> , thereby elevating the level of interaction between people and technology.</AnimatedVerticalComponent>
+              <AnimatedVerticalComponent className="w-[380px] large:w-[295px] text-white">As a product designer with a focus on digital interfaces, I continually strive to enhance my skills to create digital experiences that stand out and meet <span className="font-bold">users' needs and expectations</span> , thereby elevating the level of interaction between people and technology.</AnimatedVerticalComponent>
               <div className="flex flex-col gap-y-5 ">
-              <AnimatedVerticalComponent yStart={350} className="w-[295px] text-white">My professional qualifications cover a wide range of specializations and training. This includes a postgraduate degree in marketing, advanced <span className="font-bold">systems design training from Kanban University</span> , and experience leveraging <span className="font-bold">AI tools for design at Hotjar</span>.</AnimatedVerticalComponent>
-              <AnimatedVerticalComponent yStart={400} className="w-[295px] text-white">In addition, training as a <span className="font-bold">UX Designer at Google</span> , further enriching my set of skills and knowledge in the area.</AnimatedVerticalComponent>
+              <AnimatedVerticalComponent yStart={350} className="w-[380px] large:w-[295px] text-white">My professional qualifications cover a wide range of specializations and training. This includes a postgraduate degree in marketing, advanced <span className="font-bold">systems design training from Kanban University</span> , and experience leveraging <span className="font-bold">AI tools for design at Hotjar</span>.</AnimatedVerticalComponent>
+              <AnimatedVerticalComponent yStart={400} className="w-[380px] large:w-[295px] text-white">In addition, training as a <span className="font-bold">UX Designer at Google</span> , further enriching my set of skills and knowledge in the area.</AnimatedVerticalComponent>
               </div>
             </div>
             <div className="w-full h-full flex flex-col justify-end items-end gap-y-[16px]">
@@ -83,17 +83,19 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-        <div className="mt-[72px] flex  items-center justify-between pl-[100px]">
-        <AnimatedVerticalComponent>
-          <ImageComponent alt="car" w="w-[383px] large:w-[453px]" h="h-[288px]" src={"/images/about/about-foto3.png"} containerClassname=""/>
-        </AnimatedVerticalComponent>
-        <AnimatedVerticalComponent yStart={400}>
-          <ImageComponent alt="car" w="w-[647px]  large:w-[770px]" h="h-[288px]" src={"/images/about/about-foto4.png"} containerClassname=""/>
-        </AnimatedVerticalComponent>
+        <div className="mt-[72px] flex  items-start justify-between pl-[100px]">
+          <AnimatedVerticalComponent>
+            <ImageComponent alt="car" w="w-[380px] large:w-[453px]" h="h-[288px]" src={"/images/about/about-foto3.png"} containerClassname=""/>
+          </AnimatedVerticalComponent>
+          <div className="flex flex-col">
+            <AnimatedVerticalComponent yStart={400}>
+              <ImageComponent alt="car" w="w-[655px]  large:w-[770px]" h="h-[288px]" src={"/images/about/about-foto4.png"} containerClassname=""/>
+            </AnimatedVerticalComponent>
+          <AnimatedVerticalComponent className="flex w-[655px]  large:w-[770px]  items-start justify-start  pt-[72px]">
+            <ServiceFormComponent title="Contact me"/>
+          </AnimatedVerticalComponent>
+          </div>
         </div>
-        <AnimatedVerticalComponent className="w-full flex  items-center pl-[573px] pt-[72px]">
-          <ServiceFormComponent title="Contact me"/>
-        </AnimatedVerticalComponent>
       </section> 
     </ScrollProgressComponent>
   )

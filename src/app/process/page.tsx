@@ -63,8 +63,8 @@ export default function ProcessPage() {
           <AnimatedVerticalComponent   className="w-[730px] flex justify-start items-end">
             <ImageComponent alt="car" w="w-[516px] large:w-[612px] " h="h-[778px]" src={"/images/process/process-foto4.png"} />
           </AnimatedVerticalComponent>
-          <AnimatedVerticalComponent yStart={400} className="h-full justify-center items-center">
-          <ServiceFormComponent title="Hire me"/>
+          <AnimatedVerticalComponent yStart={400} className="h-full w-full justify-center items-center">
+            <ServiceFormComponent title="Hire me"/>
           </AnimatedVerticalComponent>
         </div>
       </div>
