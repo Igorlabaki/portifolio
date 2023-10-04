@@ -16,7 +16,7 @@ class SendEmailCase {
         
         const mailOptions = {
             from: 'igorlabakig@gmail.com',
-            to:     "igorlabakig@gmail.com",
+            to:     "florlouisegaby@gmail.com",
             subject: 'Work',
             html: `
             <body style="background-color: black; color: white; font-family: Arial, sans-serif;">
