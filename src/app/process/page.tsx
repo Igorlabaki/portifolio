@@ -15,7 +15,7 @@ export default function ProcessPage() {
       <div onMouseOver={() => setbannerAnimation(true)} onMouseOut={() => setbannerAnimation(false)} className="relative">
       <div className=" h-[100px] w-10 absolute bottom-[-100px] left-[20px] bg-custom-black z-50"/>
        <ImageComponent alt="car" w={"w-[564px]"} h={"min-h-[789px] h-full"} src={"/images/process/banner-process.png"} containerClassname=""/>
-       <div className={`absolute top-0  left-0 z-40 w-[564px] min-h-[789px]   ${bannerAnimation ? "opacity-90 h-[660px] " : "opacity-0"}  right-0 duration-300 overflow-hidden`}>
+       <div className={`absolute top-0  left-0 z-40 w-[564px] min-h-[789px]   ${bannerAnimation ? "opacity-90 h-[660px] " : "opacity-0"}  right-0 duration-700 overflow-hidden`}>
           <ImageComponent  alt='ritghBox' w={"w-[465px]"} h="h-full"  src={"/images/cases/strm/strm-texture.png"} containerClassname="brightness-200"/>
         </div>
        <div  className={`absolute top-[150px] left-[290px] large:left-[326px] leading-[154.78px] font-[700] z-50 flex flex-col ${helveltica.className}  ${bannerAnimation ? "text-custom-orange" : "text-white"} duration-700 text-[135px] large:text-[170px]`}>
