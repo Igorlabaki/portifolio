@@ -1,22 +1,20 @@
 import { ISendEmailParams } from "@/types/sendEmail";
 import nodemailer from "nodemailer"
 
-
-
 class SendEmailCase {
     async execute( {email,message,name,service} : ISendEmailParams ){
 
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-              user: 'igorlabakig@gmail.com', // Seu endereço de e-mail
+              user: 'igorrrlabaki@gmail.com', // Seu endereço de e-mail
               pass: process.env.EMAIL_PASSWORD, // Sua senha de e-mail
             },
         });
         
         const mailOptions = {
-            from: 'igorlabakig@gmail.com',
-            to:     "florlouisegaby@gmail.com",
+            from: 'igorrrlabaki@gmail.com',
+            to:     "igorlabakig@gmail.com",
             subject: 'Work',
             html: `
             <body style="background-color: black; color: white; font-family: Arial, sans-serif;">
@@ -40,3 +38,5 @@ class SendEmailCase {
 }
 
 export {SendEmailCase}  
+
+

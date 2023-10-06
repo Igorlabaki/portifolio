@@ -10,7 +10,7 @@ export const sendEmailSchema = z.object({
   }).nonempty('Este campo e obrigatorio!'),
   service: z.string({
     required_error: 'Este campo e obrigatorio!',
-  }) .nonempty('Este campo e obrigatorio!'),
+  }).nonempty('Este campo e obrigatorio!'),
   message: z
     .string({
       required_error: 'Este campo e obrigatorio!',

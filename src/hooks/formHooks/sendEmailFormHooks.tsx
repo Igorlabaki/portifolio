@@ -19,6 +19,8 @@ export default function UseSendEmailHookForm() {
     resolver: zodResolver(sendEmailSchema),
   });
 
+  const serviceWatch =  watch("service")
+
   async function handleOnSubmit(data: {name: string, email:string, message:string, service: string}) {
     sendEmailMutate(data)
   }
@@ -31,6 +33,7 @@ export default function UseSendEmailHookForm() {
     register,
     setValue,
     handleSubmit,
+    serviceWatch,
     handleOnSubmit,
     IsSendEmailLoading,
     isSendEmailSuccess

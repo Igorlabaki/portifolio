@@ -16,6 +16,7 @@
     "add": "^2.0.6",
     "axios": "^1.5.1",
     "framer-motion": "^10.16.4",
+    "google-auth-library": "^9.1.0",
     "next": "latest",
     "nodemailer": "^6.9.5",
     "prettier-plugin-tailwindcss": "^0.5.4",

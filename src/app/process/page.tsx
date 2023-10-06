@@ -35,11 +35,11 @@ export default function ProcessPage() {
             <div className=" w-[516px]  leading-[16px] text-[12px] flex large:flex-row large:gap-x-[20px] flex-col space-x-[135px] large:space-x-0 gap-y-[73px] large:gap-y-0">
               <AnimatedVerticalComponent  className="flex flex-col justify-start items-start text-justify gap-y-[27px] w-[290px]">
                 <p className="text-custom-yellow">DISCOVER</p>
-                <p className="text-white">Lorem ipsum dolor sit amet consectetur. Pellentesque vel ornare fringilla nisl sed tincidunt. Tellus leo ullamcorper sem orci vitae lectus. Adipiscing nunc leo ac ultrices auctor lacus sapien. Eu pharetra sed eget nulla odio consequat ultricies placerat eget.</p>
+                <p className="text-white">Comprehensive research is conducted to gather insights into client objectives, audience preferences, and market trends. This critical stage informs the creative direction, helping to identify design opportunities and lay a strong foundation for the project's success.</p>
               </AnimatedVerticalComponent>
               <AnimatedVerticalComponent yStart={400}  duration={1.4} className="flex flex-col justify-start items-start text-justify gap-y-[27px] w-[290px]">
                 <p className="text-custom-yellow">DEFINE</p>
-                <p className="text-white">Lorem ipsum dolor sit amet consectetur. Pellentesque vel ornare fringilla nisl sed tincidunt. Tellus leo ullamcorper sem orci vitae lectus. Adipiscing nunc leo ac ultrices auctor lacus sapien. Eu pharetra sed eget nulla odio consequat ultricies placerat eget.</p>
+                <p className="text-white">A design project is a structured endeavor to create aesthetically pleasing and functional solutions. It involves research, ideation, and execution to meet specific objectives, whether in graphic, product, or user experience design, while considering user needs and market dynamics.</p>
               </AnimatedVerticalComponent>
             </div>
           </div>
@@ -50,16 +50,16 @@ export default function ProcessPage() {
             <div className=" leading-[16px] text-[12px] flex large:flex-row large:gap-x-[20px] flex-col space-x-[135px] large:space-x-0 gap-y-[73px] large:gap-y-0">
               <AnimatedVerticalComponent yStart={400}  className="flex flex-col justify-start items-start text-justify gap-y-[27px] w-[290px]">
                 <p className="text-custom-yellow">DEVELOP</p>
-                <p className="text-white">Lorem ipsum dolor sit amet consectetur. Pellentesque vel ornare fringilla nisl sed tincidunt. Tellus leo ullamcorper sem orci vitae lectus. Adipiscing nunc leo ac ultrices auctor lacus sapien. Eu pharetra sed eget nulla odio consequat ultricies placerat eget.</p>
+                <p className="text-white">Crucial stage where conceptual ideas are refined into detailed designs and prototypes. This phase involves iterative testing, adjustments, and the creation of a comprehensive plan for implementation. It ensures that the project is well-prepared for execution and aligns with its intended goals.</p>
               </AnimatedVerticalComponent>
               <AnimatedVerticalComponent   duration={1.4} className="flex flex-col justify-start items-start text-justify gap-y-[27px] w-[290px]">
                 <p className="text-custom-yellow">IMPLEMENT</p>
-                <p className="text-white">Lorem ipsum dolor sit amet consectetur. Pellentesque vel ornare fringilla nisl sed tincidunt. Tellus leo ullamcorper sem orci vitae lectus. Adipiscing nunc leo ac ultrices auctor lacus sapien. Eu pharetra sed eget nulla odio consequat ultricies placerat eget.</p>
+                <p className="text-white">Detailed design plans are put into action. It involves executing the project according to the established guidelines, often including coding, manufacturing, or construction, depending on the type of project. This phase aims to bring the project to life and achieve its intended outcomes.</p>
               </AnimatedVerticalComponent>
             </div>
           </div>
         </div>
-        <div className="mt-[110px] flex justify-center items-center gap-x-[20px]">
+        <div className="mt-[110px] flex items-center gap-x-[20px]">
           <AnimatedVerticalComponent   className="w-[730px] flex justify-start items-end">
             <ImageComponent alt="car" w="w-[516px] large:w-[612px] " h="h-[778px]" src={"/images/process/process-foto4.png"} />
           </AnimatedVerticalComponent>
