@@ -47,7 +47,7 @@ export default function Case1Page() {
                             <p>UI Design</p>
                         </div>
                         <hr className="text-custom-white mt-[9px] leading-[15.6px]"/>
-                        <div className="text-custom-yellow flex flex-col gap-y-[16px] text-justify">
+                        <div className="text-custom-white flex flex-col gap-y-[16px] text-justify">
                             <p className="mt-[21px] font-[600]">Creating new concepts based on user feedback</p>
                             <div className="flex flex-col gap-[10px]">
                               <p><span className="font-bold">Mercedes-Benz</span>, stands as one of the preeminent automotive brands on a global scale. During my tenure at Luxoft in the capacity of a UX/UI Designer, I had the privilege of contributing to the development of the innovative NGT7 car line. Within this role, I undertook the responsibility of conceptualizing enhanced usability approaches for specific interface elements featured on certain screens. This initiative was prompted by user feedback which indicated discomfort and suboptimal user experiences with certain attributes of the preceding NGT6 line .</p>
@@ -67,7 +67,7 @@ export default function Case1Page() {
               </AnimatedVerticalComponent>
             </motion.div>
             <div className="flex gap-x-[16px] text-[12px] leading-[16px]">
-              <div className="text-custom-yellow w-[452px] text-justify flex flex-col justify-between ">
+              <div className="text-custom-white w-[452px] text-justify flex flex-col justify-between ">
                   <AnimatedVerticalComponent className="flex flex-col flex-1 gap-y-[16px] ">
                       <p>In conjunction with the extensive information available regarding the brand's specifications, constraints, and established conventions, it was paramount for us to acknowledge the input from Mercedes stakeholders.</p>
                       <p>Upon meticulous assessment of the aforementioned user feedback, it was discerned that the newly proposed concepts had been adeptly aligned with the discerning aesthetic and brand standards meticulously set forth by Mercedes-Benz. </p>

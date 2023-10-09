@@ -47,7 +47,7 @@ export default function Case1Page() {
                             <p>UX/UI Design</p>
                         </div>
                         <hr className="text-custom-white mt-[9px] leading-[15.6px]"/>
-                        <div className="text-custom-yellow flex flex-col gap-y-[16px] text-justify">
+                        <div className="text-custom-white flex flex-col gap-y-[16px] text-justify">
                             <p className="mt-[21px] font-[600]">Analyze and understand user feedback data, improve journey and layout</p>
                             <div className="flex flex-col gap-[10px]">
                               <p><span className="font-bold">Solvum</span>, as a technology company, served B2B or B2C companies for different segments, providing platform solutions, websites, mobile applications and the like. One of my biggest achievements was participating in the ideation of a Fintech - Zebra platform for online remittances from companies.</p>
@@ -66,7 +66,7 @@ export default function Case1Page() {
               </AnimatedVerticalComponent>
             </motion.div>
             <div className="flex gap-x-[16px] text-[12px] leading-[16px]">
-              <div className="text-custom-yellow w-[452px] text-justify flex flex-col justify-between ">
+              <div className="text-custom-white w-[452px] text-justify flex flex-col justify-between ">
                   <AnimatedVerticalComponent className="flex flex-col flex-1 gap-y-[16px] ">
                       <p>After carefully reviewing feedback and conducting usability tests conducted by the company, I collaborated with the Solvum design team to analyze this data thoroughly. Our primary goal was to enhance user journeys within the platform and establish a consistent end-to-end user experience. To guide our evaluations and improvements, we relied on Nielsen's heuristics as our foundational framework. </p>
                       <p>My responsibilities encompassed working closely with personas to map out user journeys, construct detailed user journey maps, conduct heuristic evaluations throughout the entire platform, and propose innovative features and user flows. Simultaneously, I ensured that the layout underwent meticulous adaptations to align with our optimization efforts.</p> 

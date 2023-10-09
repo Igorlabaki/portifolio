@@ -18,7 +18,7 @@ export  function FirstCaseComponent() {
                             <p>UX/ UI Design</p>
                         </div>
                         <hr className="text-custom-white mt-[9px] leading-[15.6px]"/>
-                        <div className="text-custom-yellow flex flex-col gap-y-[16px] text-justify">
+                        <div className="text-custom-white flex flex-col gap-y-[16px] text-justify">
                             <p className="mt-[21px] font-[600]">Development of Features for the New Model Car VF7 by Vietnamese Brand Vinfast</p>
                             <p>For several months, we have been deeply engaged in the conception and development of features for the latest car model by Vinfast, the VF7. This endeavor required meticulous market research regarding emerging trends in the electric vehicle industry.</p>
                         </div>

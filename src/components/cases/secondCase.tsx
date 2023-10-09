@@ -41,7 +41,7 @@ export  function SecondCaseComponent() {
 
   return (
     <div className="flex gap-x-[16px] text-[12px] leading-[16px]">
-        <div className="text-custom-yellow w-[452px] text-justify flex flex-col justify-between ">
+        <div className="text-custom-white w-[452px] text-justify flex flex-col justify-between ">
             <AnimatedVerticalComponent className="flex flex-col flex-1 gap-y-[16px] ">
                 <p>My contribution in this project was centered around creating wireframes, with the primary goal of enhancing usability to provide an exceptional driving experience for motorists. I worked closely with our stakeholders, incorporating valuable feedback and facilitating co-creations that enriched the final outcome. My involvement spanned the entire project lifecycle, culminating in the creation of user interfaces (UI Design).</p>
                 <p>My involvement the entire project lifecycle, culminating in the creation of user interface (UI DESGIN).</p>

@@ -46,7 +46,7 @@ export default function Case1Page() {
                             <p>UX/UI Design</p>
                         </div>
                         <hr className="text-custom-white mt-[9px] leading-[15.6px]"/>
-                        <div className="text-custom-yellow flex flex-col gap-y-[16px] text-justify">
+                        <div className="text-custom-white flex flex-col gap-y-[16px] text-justify">
                             <p className="mt-[21px] font-[600]">Creation of Design System for internal client</p>
                             <div className="flex flex-col gap-[10px]">
                               <p><span className="font-bold">Luxoft</span>, is a prominent technology company that operates as part of the DXC group. Our core mission revolves around providing cutting-edge technology solutions in the realm of motorsport. We are proud to collaborate with esteemed brands in the market, including <span className="font-bold">Mercedes Benz, BMW, Royal Enfield, Toyota, and VinFast </span>.</p>
@@ -66,7 +66,7 @@ export default function Case1Page() {
               </AnimatedVerticalComponent>
             </motion.div>
             <div className="flex gap-x-[16px] text-[12px] leading-[16px]">
-              <div className="text-custom-yellow w-[452px] text-justify flex flex-col justify-between ">
+              <div className="text-custom-white w-[452px] text-justify flex flex-col justify-between ">
                   <AnimatedVerticalComponent className="flex flex-col flex-1 gap-y-[16px] ">
                       <p>I served as the leader of this initiative, where Luxoft, a prominent internal client, sought to <span className="font-bold"> develop a versatile design system </span>. We began by conducting comprehensive discussions and meticulously gathering critical data to define the system's scope and objectives. To ensure its applicability across diverse brands, we focused on benchmarking interface usability, responsiveness across different device sizes, and brand neutrality.</p>
                       <p>My leadership played a pivotal role in guiding the project to success. As a result of our dedicated efforts, we not only met <span className="font-bold"> uxoft's requirements but also received an internal award </span> for our outstanding work. </p>

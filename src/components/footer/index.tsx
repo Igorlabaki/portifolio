@@ -1,19 +1,20 @@
 "use client"
-import { helveltica } from "@/fonts/constants"
+import { helveltica, wtGothic } from "@/fonts/constants"
 import {motion} from "framer-motion"
+import LinksComponent from "./links"
 
 export  function FooterComponent() {
   return (
-    <footer className="min-w-screen my-[72px]  overflow-hidden">
-        <div className="bg-custom-gray w-full px-[21px] h-[23px] flex">
-            <div className=" w-[648px] text-[10px] flex justify-between items-center text-custom-yellow">
-                <a href="https://www.behance.net/florgaby" target="_blank">BEHANCE</a>
-                <a href="https://www.linkedin.com/in/florencezandona/" target="_blank">LINKEDIN</a>
-                <a href="https://medium.com/@florlouisegaby" target="_blank">MEDIUM</a>
-            </div>
+    <footer className="min-w-screen my-[72px]  overflow-hidden relative">
+        <div className={`bg-custom-gray w-full h-[23px] flex overflow-hidden z-50 ${wtGothic.className}`}>
+          <div className=" w-[648px] text-[10px] flex justify-between items-center text-custom-yellow">
+            <LinksComponent link="https://www.behance.net/florgaby" title="BEHANCE"/>
+            <LinksComponent link="https://www.linkedin.com/in/florencezandona/" title="LINKEDIN"/>
+            <LinksComponent link="https://medium.com/@florlouisegaby" title="MEDIUM"/>
+          </div>
         </div>
         <motion.h3
-      className={`text-custom-yellow text-[150px] large:text-[200px] font-[700] h-fit w-full flex ${helveltica.className}`}
+      className={`text-custom-yellow text-[150px] large:text-[200px] font-[700] w-full flex z-30 ${helveltica.className}`}
       initial={{ x: "100%" }} // Define a posição inicial fora da tela à direita
       animate={{ x: "-100%" }} // Define a posição final fora da tela à esquerda
       transition={{ repeat: Infinity, duration: 10, ease: "linear" }} // Configura a animação infinita

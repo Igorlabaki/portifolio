@@ -46,7 +46,7 @@ export default function Case1Page() {
                             <p>UI Design</p>
                         </div>
                         <hr className="text-custom-white mt-[9px] leading-[15.6px]"/>
-                        <div className="text-custom-yellow flex flex-col gap-y-[16px] text-justify">
+                        <div className="text-custom-white flex flex-col gap-y-[16px] text-justify">
                             <p className="mt-[21px] font-[600]">Data visualization, design based on data analysis and visual solutions</p>
                             <div className="flex flex-col gap-[10px]">
                               <p><span className="font-bold">STRM</span> is a cutting-edge music career acceleration company dedicated to fostering artists' success. Our core mission is to empower artists by providing vital data to investors and entrepreneurs, helping them make informed decisions about their careers.</p>
@@ -68,7 +68,7 @@ export default function Case1Page() {
               </AnimatedVerticalComponent>
             </motion.div>
             <div className="flex gap-x-[16px] text-[12px] leading-[16px]">
-              <div className="text-custom-yellow w-[452px] text-justify flex flex-col justify-between ">
+              <div className="text-custom-white w-[452px] text-justify flex flex-col justify-between ">
                   <AnimatedVerticalComponent className="flex flex-col flex-1 gap-y-[16px] ">
                       <p>In our pursuit to aggregate vast <span className="font-bolf">amounts of market data</span>  seamlessly into our platform, we encountered a significant challenge. Our objective was to ensure that users could effortlessly extract the most pertinent insights with the aid of our intuitive features.</p>
                       <p> Over a span of three months, <span>I collaborated closely with a data scientist</span> to meticulously process and transform this data into visually clear and user-friendly formats, ultimately catering to the needs of our end users. </p> 

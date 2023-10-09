@@ -48,7 +48,7 @@ export default function Case1Page() {
                             <p>Research</p>
                         </div>
                         <hr className="text-custom-white mt-[9px] leading-[15.6px]"/>
-                        <div className="text-custom-yellow flex flex-col gap-y-[16px] text-justify">
+                        <div className="text-custom-white flex flex-col gap-y-[16px] text-justify">
                             <p className="mt-[21px] font-[600]">User interviews, user needs and product ideation</p>
                             <div className="flex flex-col gap-[10px]">
                               <p><span className="font-bold">Resolva Meu Look</span>, is a company that provides Image Consulting for individuals or companies.</p>
@@ -68,7 +68,7 @@ export default function Case1Page() {
               </AnimatedVerticalComponent>
             </motion.div>
             <div className="flex gap-x-[16px] text-[12px] leading-[16px]">
-              <div className="text-custom-yellow w-[452px] text-justify flex flex-col justify-between ">
+              <div className="text-custom-white w-[452px] text-justify flex flex-col justify-between ">
                   <AnimatedVerticalComponent className="flex flex-col flex-1 gap-y-[16px] ">
                       <p><span className="font-bold">The objective of the research</span>  was based on some hypotheses that the company had regarding some feedback from the company's customer support, to assess the needs of our users. Surveys were carried out with 120 users who had already used a consultancy service.</p>
                       <p>Based on the results of our research, we analyzed the implementation of a service or adapting one that already existed, which was scalable and digital to meet this demand.</p> 
